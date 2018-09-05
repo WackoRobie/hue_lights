@@ -3,10 +3,13 @@
 import requests
 import json
 
-URL = "http://192.168.188.22/api/2TVMBPdD12TsazTaC474o1mEK5KZODZ8FEsAs199/groups/"
+IP = '192.168.188.22'
+USER = '2TVMBPdD12TsazTaC474o1mEK5KZODZ8FEsAs199'
+URL = f"http://{IP}/api/2TVMBPdD12TsazTaC474o1mEK5KZODZ8FEsAs199/groups/"
 
+selection = 'groups'
 
-r = requests.get(URL)
+r = requests.get(f"http://{IP}/api/{USER}/{selection}/")
 
 response = json.loads(r.text)
 
