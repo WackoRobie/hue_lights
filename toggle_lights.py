@@ -45,7 +45,6 @@ def toggleGroupByNumber(group):
     logging.info("Changing Group State")
     put = requests.put(BASE_URL + GROUP_URL + 'action/', data=mydata)
     logging.debug(put.json())
-    toggleLightByNumber(1)
     counter = 5
     while True:
         counter -= 1
