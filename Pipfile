@@ -8,6 +8,7 @@ requests = "*"
 
 [dev-packages]
 ipython = "*"
+"flake8" = "*"
 
 [requires]
 python_version = "3.6"
